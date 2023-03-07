@@ -1,0 +1,2 @@
+#!/bin/bash
+export WEB3_INFURA_PROJECT_ID=675015390f6c471bb37cdff67bda3e75

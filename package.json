@@ -1,0 +1,28 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "migrate": "truffle migrate",
+    "build": "truffle compile",
+    "test": "truffle test",
+    "builddocs": "npx solidity-docgen --solc-module solc-0.7 -t docs/templates -o docs/api"
+  },
+  "devDependencies": {
+    "@digix/doxity": "^0.5.2",
+    "@openzeppelin/contracts-upgradeable": "^3.4.1-solc-0.7-2",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@openzeppelin/truffle-upgrades": "^1.5.1",
+    "@truffle/hdwallet-provider": "^1.2.3",
+    "chai": "^4.3.0",
+    "chai-as-promised": "^7.1.1",
+    "eth-gas-reporter": "^0.2.22",
+    "mnemonics": "^1.1.3",
+    "solc-0.7": "npm:solc@^0.7.6",
+    "solidity-coverage": "^0.7.15",
+    "truffle": "^5.3.2",
+    "truffle-contract-size": "^2.0.1",
+    "verify-on-etherscan": "^1.2.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1"
+  }
+}

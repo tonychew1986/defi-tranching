@@ -1,0 +1,14 @@
+## `ICEtherMock`
+
+
+
+
+
+
+### `mint()` (external)
+
+
+
+
+
+

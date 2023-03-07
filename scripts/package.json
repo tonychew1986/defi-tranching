@@ -1,0 +1,15 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc safe_sig_gen_uport_eip712.ts --esModuleInterop",
+    "test": "truffle exec gnosis-examples.js --network rinkeby"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bignumber": "^1.1.0",
+    "eth-typed-data": "*",
+    "ethereumjs-util": "^6.2.1",
+    "ethers": "^5.1.4",
+    "typescript": "^4.2.4"
+  }
+}

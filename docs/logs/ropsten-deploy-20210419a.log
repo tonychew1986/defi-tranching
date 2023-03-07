@@ -1,0 +1,289 @@
+[joe@big-apple migrations (dev/upgrade-deploy)]$ truffle develop --network ropsten
+> Warning: possible unsupported (undocumented in help) command line option: --network
+Truffle Develop started at http://127.0.0.1:9545/
+
+Accounts:
+(0) 0x35b9f43f9ec7aef35bff4f3330ef74df95ee9364
+(1) 0x968e88df55acaec002e3d7c2393f9742e40d94b9
+(2) 0xef28af2a35002f2b1f988aa02bd9aa6932cf20a7
+(3) 0xc7a5fbc9a1047e22425c01c5faa86632a1e99cb2
+(4) 0xc3ccf49f45d2b53455ebb148f910bf77bb92e6c7
+(5) 0xf7af08c288b8e5aec8d39a02919e7665543c8678
+(6) 0xc487e065d33bca72f4a59e6c16b33062a5c5e775
+(7) 0x4fcad1438c08e606b8a9357775614a7edcb0b74a
+(8) 0x632c9ea0128e6ffeacd4119495dc4e51b8aed6c9
+(9) 0xd2105ab296022b7bd9179a074ffdd3d37f84a942
+
+Private Keys:
+(0) c2901eca9b592ce0d6037b68d8535480cdadda28b31f1586b5b2f69625a04e91
+(1) 5ad5139522b09350428c5d5ab1bb61764f043a72ca3596cef69913dddb0262fd
+(2) 62489355b69835f260343b63d0787eeb43d22eec0733e33a059da48f731271a9
+(3) d29eecc07e90cf2ff40afecf4c8b311d7de96f3374c022efa80c3a0cbbd0fdca
+(4) 897b6e0dd37e99c22ce4d7f40ba5169079209b16dc39346d9342d1896955f214
+(5) 504585f7e4638225d0071345c4e242c745814750d790c2b5f4f2b72e3c339afd
+(6) 23f375283e93552cc9018b6fb9cb311b1be440c17d7b8f4d51688dff58d97a92
+(7) 6e02a57526e71c49fa829c97a80df5ab7adca0a1977fa358f5ffc61f5baea94c
+(8) 26ca0a181da677f044397ae7dd29653fd57f47e81c0e786933883f7cc7df2fa5
+(9) 8faee2f2aa8833db0657ff14ab501c344c073e9664204145aec9c0a95c1adbc1
+
+Mnemonic: ridge warm attend casino return pupil atom simple fitness bronze tunnel try
+
+⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
+Ensure you do not use it on production blockchains, or else you risk losing funds.
+
+truffle(ropsten)> migrate --reset
+migrate --reset
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'ropsten-fork'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        10065196
+   > block timestamp:     1618774955
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.519257708
+   > gas used:            138706 (0x21dd2)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000277412 ETH
+
+   -------------------------------------
+   > Total cost:         0.000277412 ETH
+
+
+2_deploy_nutmeg.js
+==================
+sink fund:  0x968e88df55acaec002e3d7c2393f9742e40d94b9
+deployer:   0x35b9f43f9ec7aef35bff4f3330ef74df95ee9364
+governor:   0xef28af2a35002f2b1f988aa02bd9aa6932cf20a7
+
+   Replacing 'MockERC20'
+   ---------------------
+   > block number:        10065198
+   > block timestamp:     1618774964
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.517798402
+   > gas used:            702398 (0xab7be)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001404796 ETH
+
+
+   Replacing 'MockCERC20'
+   ----------------------
+   > block number:        10065199
+   > block timestamp:     1618774975
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.515406174
+   > gas used:            1196114 (0x124052)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002392228 ETH
+
+
+   Replacing 'Nut'
+   ---------------
+   > block number:        10065200
+   > block timestamp:     1618774992
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.513516366
+   > gas used:            944904 (0xe6b08)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001889808 ETH
+
+
+   Replacing 'TestNutDistributor'
+   ------------------------------
+   > block number:        10065203
+   > block timestamp:     1618775055
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.509922818
+   > gas used:            1768342 (0x1afb96)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.003536684 ETH
+
+Nutmeg deployed:  0xf5C9a8bc445B32663FcD3F07d2317F366e5eACD7
+Upgraded:  0xf5C9a8bc445B32663FcD3F07d2317F366e5eACD7
+
+   Replacing 'CompoundAdapter'
+   ---------------------------
+   > block number:        10065216
+   > block timestamp:     1618775102
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.491966602
+   > gas used:            2845517 (0x2b6b4d)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005691034 ETH
+
+   -------------------------------------
+   > Total cost:          0.01491455 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.015191962 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x84b6cadeb01805c8a9678fdfa70bbfaf699254f4b2af4f36d43158a192362c41
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x2b8F3e7888CBc27819eb241B1379D05C4bBD8B0f
+   > block number:        10065210
+   > block timestamp:     1618775110
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.516435
+   > gas used:            155006 (0x25d7e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00310012 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00310012 ETH
+
+
+2_deploy_nutmeg.js
+==================
+sink fund:  0x968e88df55acaec002e3d7c2393f9742e40d94b9
+deployer:   0x35b9f43f9ec7aef35bff4f3330ef74df95ee9364
+governor:   0xef28af2a35002f2b1f988aa02bd9aa6932cf20a7
+
+   Replacing 'MockERC20'
+   ---------------------
+   > transaction hash:    0xfd335548b93d1f51419be87974892333f2ab23de94cc630d453eeedbf6e0a123
+   > Blocks: 2            Seconds: 20
+   > contract address:    0x1e096f67Db9424a6a5Eb7BEaAF3232C0d9699f86
+   > block number:        10065213
+   > block timestamp:     1618775151
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.50052394
+   > gas used:            749898 (0xb714a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01499796 ETH
+
+
+   Replacing 'MockCERC20'
+   ----------------------
+   > transaction hash:    0xd7349362f1b2c5ac91095f6e32ed955f1bda4868ca62ed3f88ab0977cbfb75f5
+   > Blocks: 3            Seconds: 8
+   > contract address:    0x1406C3795dA2d74df104E9292afBD574FceC8E4b
+   > block number:        10065217
+   > block timestamp:     1618775175
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.47508166
+   > gas used:            1272114 (0x136932)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02544228 ETH
+
+
+   Replacing 'Nut'
+   ---------------
+   > transaction hash:    0x8eb23c51a7cc87eb90c86997f066a414a1a5d2232b18936f33d5b12bcdd5a2fd
+   > Blocks: 1            Seconds: 8
+   > contract address:    0xf4D3F919E36000a4D681Dbaa45e8Febb1DB89E95
+   > block number:        10065219
+   > block timestamp:     1618775184
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.45365558
+   > gas used:            1071304 (0x1058c8)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02142608 ETH
+
+
+   Replacing 'TestNutDistributor'
+   ------------------------------
+   > transaction hash:    0x480bc100afed2fa6ebb6a113fe951494ad5456c81ec66e1b0b65fce3ebd1eca8
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x3dd9a93961F251cf4D9DA256B241dFeb36b5EbCa
+   > block number:        10065220
+   > block timestamp:     1618775191
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.4016721
+   > gas used:            2553142 (0x26f536)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05106284 ETH
+
+Nutmeg deployed:  0x87ddf96406A702AaC2575f26B7620aA1C323EE71
+Upgraded:  0x87ddf96406A702AaC2575f26B7620aA1C323EE71
+
+   Replacing 'CompoundAdapter'
+   ---------------------------
+   > transaction hash:    0x852fb1f5d5822653495f59a44b8f19cb93d2ce0f5c0b00bc0083cbdefcc93c56
+   > Blocks: 3            Seconds: 20
+   > contract address:    0xfD13F7E36aaC8Eb1283a8Dd42EB4b3d6f7802ECA
+   > block number:        10065227
+   > block timestamp:     1618775241
+   > account:             0x35b9F43f9Ec7aEf35bfF4f3330Ef74Df95eE9364
+   > balance:             0.32997264
+   > gas used:            2873217 (0x2bd781)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05746434 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.1703935 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.17349362 ETH
+
+
+
+(node:1216324) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 data listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1216324) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connect listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:1216324) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:1216324) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+
+truffle(ropsten)> truffle(ropsten)> truffle(ropsten)> truffle(ropsten)> truffle(ropsten)> truffle(ropsten)> truffle(ropsten)> 

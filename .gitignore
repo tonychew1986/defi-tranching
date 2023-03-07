@@ -1,0 +1,6 @@
+.idea
+.history
+.openzeppelin
+build/
+node_modules/
+scripts/secrets.json

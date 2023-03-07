@@ -1,0 +1,19 @@
+- run dry-run
+- change gasprice on rinkeby and mainnet to gas station price
+
+
+- run mainnet
+- tag repository
+- save logs
+- run solt commands to verify
+~/.local/bin/solt verify solc-input-nutmeg.json 0x9b24b4f2d9810154d20f25b616a1e4c987b9717a Nutmeg -c v0.7.6 -n rinkeby --infura <API> --etherscan <API>
+
+
+- use https://abi.hashex.org/ to generate abi
+
+
+nut.acceptGovernor();
+nut.setNutDistributor(nutDistributor.address, {from: govAddr});
+nutmeg.setNut(nut.address, {from: govAddr});
+nutmeg.setNutDistributor(nutDistributor.address, {from: govAddr});
+nutDistributor.setNutmegAddress(nutmeg.address, {from: govAddr});
